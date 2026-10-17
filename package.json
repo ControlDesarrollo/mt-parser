@@ -1,0 +1,24 @@
+{
+  "name": "mt-parser",
+  "version": "0.1.0",
+  "module": "src/cli.ts",
+  "type": "module",
+  "private": true,
+  "packageManager": "bun@1.4.1",
+  "scripts": {
+    "test": "bun test",
+    "build": "bun build ./src/cli.ts --compile --outfile dist/mt-parser"
+  },
+  "dependencies": {
+    "remark-frontmatter": "5.0.0",
+    "remark-gfm": "4.0.1",
+    "remark-mdx": "3.1.1",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.3",
+    "@types/mdast": "4.0.4",
+    "typescript": "7.0.2"
+  }
+}
